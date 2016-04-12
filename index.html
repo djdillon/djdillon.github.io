@@ -3,15 +3,42 @@
     <title>Product Analytics - RADIO contest</title>
 </head>
 <body>
-    <form id="radio" action="https://vcsa.vmware.com/ph-stg/api/hyper/send?_c=prototyping-only.v0&_t=radio" method="get">
+    <form id="radio" action="https://vcsa.vmware.com/ph-stg/api/hyper/send" method="get">
         <input type="hidden" name="_c" value="prototyping-only.v0"/>
         <input type="hidden" name="_t" value="radio"/>
 
-        What is your favorite color? <br>
-        <input type="radio" name="q1" value="blue"/>Blue<br>
-        <input type="radio" name="q1" value="red"/>Red<br>
-        <input type="radio" name="q1" value="green"/>Green<br>
-        <br>
+        What is your favorite color? <br/>
+        <input type="radio" name="q1" value="blue"/>Blue<br/>
+        <input type="radio" name="q1" value="red"/>Red<br/>
+        <input type="radio" name="q1" value="green"/>Green<br/>
+        <br/>
+
+        Is C# UI client used by customers more often than the vSphere Web UI? <br/>
+        <input type="radio" name="q2" value="yes"/>Yes<br/>
+        <input type="radio" name="q2" value="no"/>No<br/>
+        <input type="radio" name="q2" value="both"/>Both are used about the same<br/>
+        <br/>
+
+        Which booths or posters are currently leveraging telemetry data?<br/>
+        <label> <input type="checkbox" name="tel-proj-1" />
+            "vSphere Web Client - UI Telemetry"
+        </label> <br/>
+        <label> <input type="checkbox" name="tel-proj-2" />
+            "vSphere H5 Web Client Feedback"
+        </label> <br/>
+        <label> <input type="checkbox" name="tel-proj-3" />
+            "vCloud Hair - Virtual Toupees"
+        </label> <br/>
+        <br/>
+
+        How do you think you can benefit from telemetry data in the future?<br/>
+        <textarea name="future" rows="4"></textarea><br/>
+        <br/>
+
+        VMware AD username: <input type="text" name="user" /><br/>
+        Project name: <input type="text" name="project" /><br/>
+        <br/>
+
         <input type="submit"/>
     </form>
 </body>
