@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Product Analytics - RADIO 2016 contest</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+
+    <table width="100%">
+    <tr>
+    <td>
+        <a href="https://wiki.eng.vmware.com/PhoneHome"><img src="product-analytics-logo.gif" width="25%" align="right"></a>
+
+    </td>
+    </tr>
+    <tr>
+    <td align="center">
+        <div class="alert-box success" width="80%">
+            <table border="0" width ="100%">
+            <tr>
+            <td align="left" width="5%"><img src="success.png" width="80%"/></td>
+            <td><span>success: </span></td>
+            <td align="left">An email with contest results will be sent to <code><font id="vmwUser">vmwUser</font></code> on May 13th 2016.<br>
+            If this contest was interesting to you come and visit RADIO Expo Booth XXXX.
+            </td>
+            </tr>
+            </table>
+        </div>
+    </td>
+    </tr>
+    </table>
+        
+        
+<script language="JavaScript">
+    var parameters = location.search.substring(1).split("&");
+    var temp = parameters[0].split("=");
+    u = unescape(temp[1]);
+    document.getElementById("vmwUser").innerHTML = u+"@vmware.com" ;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<html>
+<head>
+    <title>Product Analytics - RADIO 2016 contest</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+
+<script>
+    function validateId() {
+        document.getElementById("vmware_id").value = document.getElementById("vmware_id").value.toLowerCase();
+    }
+    function onSubmit() {
+        var vmwUser = document.getElementById("vmware_id").value;
+        window.open("thanks.html?user="+vmwUser)
+        //alert("Click OK to submit your results!\nThank you for participating!\n An email with survey results will be sent to " + vmwUser + "@vmware.com on May 13-th 2016\n If this was interesting to you come and visit Expo Booth XXXX.");
+    }
+</script>    
+
+
+<!--button type="button" onclick="onSubmit()">Click Me!</button-->
+
+
+<form id="radio" action="https://vcsa.vmware.com/ph-stg/api/hyper/send" method="get" style="font-family:sans-serif;background-color:#FFFFFF" class="semiTransparentImageBackground">
+            <a href="https://wiki.eng.vmware.com/PhoneHome"><img src="product-analytics-logo.gif" width="25%" align="right"></a>
+        &nbsp;<p>
+        <input type="hidden" name="_c" value="prototyping-only.v0"/>
+        <input type="hidden" name="_t" value="radio"/>
+<table class = "zebra" >
+<tbody>
+<tr>
+<td>
+</td>
+</tr>
+
+<tr>
+<td>
+<b>Chapter 1: Who are you</b>
+</td>
+</tr>
+
+<tr>
+<td>
+        &nbsp;&nbsp;&nbsp;
+        What is your VMware email address: 
+        <t>What is your VMware email address: 
+        <input  type="text" 
+                name="_id" 
+                id="vmware_id" 
+                style="text-align:right;" 
+                size="7"
+                autofocus
+                onblur="validateId()"
+                pattern="[A-Za-z0-9_-.]*"
+                />
+                <code>@vmware.com</code>
+        <p>
+        
+        &nbsp;&nbsp;&nbsp;
+        What is the name of the product you are working on? <input type="text" name="q2" />
+        <p>
+
+        &nbsp;&nbsp;&nbsp;
+        What is your role? <input type="text" name="q3" />
+        <p>
+
+</td>
+</tr>
+
+<tr>
+<td>
+<b>Chapter 2: Customer champion questions</b> - test your customer knowledge against currently available telemetry data
+</td>
+</tr>
+
+<tr>
+<td>
+    <ol>
+        <li>Is VI Client (the C#-based UI) used by customers more often than the vSphere Web Client (the Adobe Flex-based UI)?</li>
+        <input type="radio" name="q3" value="yes"/>Yes<br/>
+        <input type="radio" name="q3" value="no"/>No<br/>
+        <input type="radio" name="q3" value="both"/>Both are used about the same<br/>
+        <p>
+       
+        
+        <li>What is the most-common ESXi CPU vendor?</li>
+        <input type="radio" name="q4" value="AMD"/>AMD<br/>
+        <input type="radio" name="q4" value="Intel"/>Intel<br/>
+        <input type="radio" name="q4" value="both"/>AMD and Intel have about equal share<br/>
+        <p>
+        
+        <li>How much free space is on our customers' datastores?</li>
+        <input type="radio" name="q5" value="inbetween"/>Between 10% and 25% of the storage capacity is available<br/>
+        <input type="radio" name="q5" value="<10%"/>Less than 10% of the storage capacity is a free space<br/>
+        <input type="radio" name="q5" value=">25%"/>More than 25% of storage capacity is free<br/>
+        <p>
+        
+        <li>For deployed ESXi hosts, what is the largest memory size?</li>
+        <input type="radio" name="q6" value="128G"/>128 GB<br/>
+        <input type="radio" name="q6" value="256G"/>256 GB<br/>
+        <input type="radio" name="q6" value="1T"/>1 TB<br/>
+        <input type="radio" name="q6" value="4T"/>4 TB<br/>
+        <input type="radio" name="q6" value="more"/>more than 4 TB<br/>
+        <p>
+        
+        <li>What volume of customer data does the PhoneHome system ingest on a monthly basis?</li>
+        <input type="radio" name="q7" value="1G"/>1 GB<br/>
+        <input type="radio" name="q7" value="100G"/>100 GB<br/>
+        <input type="radio" name="q7" value="500G"/>500 GB<br/>
+        <input type="radio" name="q7" value="1T"/>1 TB<br/>
+        <p>
+
+        <li>Which is the most widely adopted vCenter Server extension for vCenter 5.5 and newer?</li>
+        <input type="radio" name="q8" value="update manager"/>VMware vSphere Update Manager<br/>
+        <input type="radio" name="q8" value="nsx"/>NSX<br/>
+        <input type="radio" name="q8" value="emc backup"/>EMC VMware Backup<br/>
+        <input type="radio" name="q8" value="vrops"/>vRealize Operations Manager<br/>
+        <p>
+
+        <li>Who is the leading vendor of ESXi Server hardware?</li>
+        <input type="radio" name="q9" value="dell"/>Dell Inc.<br/>
+        <input type="radio" name="q9" value="hp"/>HP<br/>
+        <input type="radio" name="q9" value="ibm"/>IBM<br/>
+        <input type="radio" name="q9" value="supermicro"/>Supermicro<br/>
+        <p>
+        
+        <li>List booths and posters that are leveraging PhoneHome and telemetry on RADIO 2016 (provide numbers only, e.g. if  Expo Booth #1, and posters #1, #7, and #25 are PhoneHome-related then provide  <code>1, 1, 7, 25</code>)</li>
+        <textarea name="q10" rows="1" style="width:100%"></textarea><br/>
+        <p>
+
+        <li>Have you used PhoneHome & Product Analytics before?</li>
+        <input type="radio" name="q11" value="yes"/>Yes<br/>
+        <input type="radio" name="q11" value="no"/>No<br/>
+        <p>
+
+        <li>How have you used PhoneHome & Product Analytics?</li>
+        <input type="radio" name="q12" value="yes"/>I've sent data using a PhoneHome API<br/>
+        <input type="radio" name="q12" value="no"/>I've written SQL queries against existing PhoneHome data<br/>
+        <input type="radio" name="q12" value="no"/>I've created Tableau reports with existing PhoneHome data<br/>
+        <input type="radio" name="q12" value="no"/>I've used existing reports based on PhoneHome data<br/>
+        <input type="radio" name="q12" value="no"/>I've used the Advanced Analytics platform provided by PhoneHome team<br/>
+        <input type="radio" name="q12" value="no"/>Other <input type="text" name="q13" /><br/>
+        <p>
+
+    </ol>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<b>Chapter 3: Visionary questions</b> - let us know how data can help you, VMware, and VMware customers
+</td>
+</tr>
+
+
+<tr>
+<td>
+    <ol>
+        
+        <li>What value did PhoneHome bring to you?</li>
+        <textarea name="q14" rows="7" style="width:100%"></textarea><br/>
+        <p>
+
+        <li>How can PhoneHome help you and your product?</li>
+        <textarea name="q15" rows="7" style="width:100%"></textarea><br/>
+        <p>
+        
+        <li>What are the questions which you need to be answered?</li>
+        <textarea name="q16" rows="7" style="width:100%"></textarea><br/>
+        <p>
+        
+        <li>How could data be used to deliver new or improve existing features of your product or service?</li>
+        <textarea name="q17" rows="7" style="width:100%"></textarea><br/>
+        <p>
+    </ol>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<b>Chapter 5: The end</b>
+</td>
+</tr>
+
+
+<tr>
+<td>
+    <ol>
+
+        <li>Did you learn something interesting from this survey?</li>
+        <input type="radio" name="q18" value="yes"/>Yes<br/>
+        <input type="radio" name="q18" value="no"/>No<br/>
+        <p>
+    </ol>
+</td>
+</tr>
+</tbody>
+</table>
+
+        <input type="submit" value = "Submit" onclick="onSubmit()"/>
+        &nbsp;<p>
+        &nbsp;<p>
+    </form>
+</body>
+</html>
