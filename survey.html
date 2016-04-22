@@ -44,7 +44,7 @@
         What is your VMware email address: 
         <t>What is your VMware email address: 
         <input  type="text" 
-                name="_id" 
+                name="_o" 
                 id="vmware_id" 
                 style="text-align:right;" 
                 size="7"
@@ -133,12 +133,12 @@
         <p>
 
         <li>How have you used PhoneHome & Product Analytics?</li>
-        <input type="radio" name="q12" value="yes"/>I've sent data using a PhoneHome API<br/>
-        <input type="radio" name="q12" value="no"/>I've written SQL queries against existing PhoneHome data<br/>
-        <input type="radio" name="q12" value="no"/>I've created Tableau reports with existing PhoneHome data<br/>
-        <input type="radio" name="q12" value="no"/>I've used existing reports based on PhoneHome data<br/>
-        <input type="radio" name="q12" value="no"/>I've used the Advanced Analytics platform provided by PhoneHome team<br/>
-        <input type="radio" name="q12" value="no"/>Other <input type="text" name="q13" /><br/>
+        <input type="checkbox" name="q12_1_sent"/>I've sent data using a PhoneHome API<br/>
+        <input type="checkbox" name="q12_2_sql"/>I've written SQL queries against existing PhoneHome data<br/>
+        <input type="checkbox" name="q12_3_tableau"/>I've created Tableau reports with existing PhoneHome data<br/>
+        <input type="checkbox" name="q12_4_read_reports"/>I've used existing reports based on PhoneHome data<br/>
+        <input type="checkbox" name="q12_5_advanced_analytics"/>I've used the Advanced Analytics platform provided by PhoneHome team<br/>
+        <input type="checkbox" name="q12_6_other"/>Other <input type="text" name="q12_other_text" /><br/>
         <p>
 
     </ol>
@@ -186,13 +186,11 @@
 
 <tr>
 <td>
-    <ol>
-
-        <li>Did you learn something interesting from this survey?</li>
-        <input type="radio" name="q18" value="yes"/>Yes<br/>
-        <input type="radio" name="q18" value="no"/>No<br/>
+        &nbsp;&nbsp;&nbsp;
+        Did you learn something interesting from this survey?<br>
+        &nbsp;&nbsp;&nbsp;<input type="radio" name="q18" value="yes"/>Yes<br/>
+        &nbsp;&nbsp;&nbsp;<input type="radio" name="q18" value="no"/>No<br/>
         <p>
-    </ol>
 </td>
 </tr>
 </tbody>
