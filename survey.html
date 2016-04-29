@@ -34,7 +34,7 @@
 
 <tr>
 <td>
-<b>Chapter 1: Who are you</b>
+<b>Section 1: Who are you?</b>
 </td>
 </tr>
 
@@ -44,7 +44,7 @@
         What is your VMware email address: 
         <t>What is your VMware email address: 
         <input  type="text" 
-                name="_o" 
+                name="user" 
                 id="vmware_id" 
                 style="text-align:right;" 
                 size="7"
@@ -56,11 +56,11 @@
         <p>
         
         &nbsp;&nbsp;&nbsp;
-        What is the name of the product you are working on? <input type="text" name="q2" />
+        What is the name of the product you are working on? <input type="text" name="team" />
         <p>
 
         &nbsp;&nbsp;&nbsp;
-        What is your role? <input type="text" name="q3" />
+        What is your role? <input type="text" name="role" />
         <p>
 
 </td>
@@ -68,7 +68,7 @@
 
 <tr>
 <td>
-<b>Chapter 2: Customer champion questions</b> - test your customer knowledge against currently available telemetry data
+<b>Section 2: Customer Champion Questions</b> - test your customer knowledge against currently available telemetry data
 </td>
 </tr>
 
@@ -76,60 +76,106 @@
 <td>
     <ol>
         <li>Is VI Client (the C#-based UI) used by customers more often than the vSphere Web Client (the Adobe Flex-based UI)?</li>
-        <input type="radio" name="q3" value="yes"/>Yes<br/>
-        <input type="radio" name="q3" value="no"/>No<br/>
-        <input type="radio" name="q3" value="both"/>Both are used about the same<br/>
+        <input type="radio" name="vclient" value="yes"/>Yes<br/>
+        <input type="radio" name="vclient" value="no"/>No<br/>
+        <input type="radio" name="vclient" value="both"/>Both are used about the same<br/>
         <p>
        
         
         <li>What is the most-common ESXi CPU vendor?</li>
-        <input type="radio" name="q4" value="AMD"/>AMD<br/>
-        <input type="radio" name="q4" value="Intel"/>Intel<br/>
-        <input type="radio" name="q4" value="both"/>AMD and Intel have about equal share<br/>
+        <input type="radio" name="cpu" value="AMD"/>AMD<br/>
+        <input type="radio" name="cpu" value="Intel"/>Intel<br/>
+        <input type="radio" name="cpu" value="both"/>AMD and Intel have about equal share<br/>
         <p>
         
         <li>How much free space is on our customers' datastores?</li>
-        <input type="radio" name="q5" value="inbetween"/>Between 10% and 25% of the storage capacity is available<br/>
-        <input type="radio" name="q5" value="<10%"/>Less than 10% of the storage capacity is a free space<br/>
-        <input type="radio" name="q5" value=">25%"/>More than 25% of storage capacity is free<br/>
+        <input type="radio" name="capacity" value="inbetween"/>Between 10% and 25% of the storage capacity is available<br/>
+        <input type="radio" name="capacity" value="lt10"/>Less than 10% of the storage capacity is a free space<br/>
+        <input type="radio" name="capacity" value="gt25"/>More than 25% of storage capacity is free<br/>
         <p>
         
         <li>For deployed ESXi hosts, what is the largest memory size?</li>
-        <input type="radio" name="q6" value="128G"/>128 GB<br/>
-        <input type="radio" name="q6" value="256G"/>256 GB<br/>
-        <input type="radio" name="q6" value="1T"/>1 TB<br/>
-        <input type="radio" name="q6" value="4T"/>4 TB<br/>
-        <input type="radio" name="q6" value="more"/>more than 4 TB<br/>
+        <input type="radio" name="maxmem" value="128G"/>128 GB<br/>
+        <input type="radio" name="maxmem" value="256G"/>256 GB<br/>
+        <input type="radio" name="maxmem" value="1T"/>1 TB<br/>
+        <input type="radio" name="maxmem" value="4T"/>4 TB<br/>
+        <input type="radio" name="maxmem" value="more"/>more than 4 TB<br/>
         <p>
         
-        <li>What volume of customer data does the PhoneHome system ingest on a monthly basis?</li>
-        <input type="radio" name="q7" value="1G"/>1 GB<br/>
-        <input type="radio" name="q7" value="100G"/>100 GB<br/>
-        <input type="radio" name="q7" value="500G"/>500 GB<br/>
-        <input type="radio" name="q7" value="1T"/>1 TB<br/>
+        <li>What volume of customer data does the Product Analytics system ingest on a monthly basis?</li>
+        <input type="radio" name="paingest" value="1G"/>1 GB<br/>
+        <input type="radio" name="paingest" value="100G"/>100 GB<br/>
+        <input type="radio" name="paingest" value="500G"/>500 GB<br/>
+        <input type="radio" name="paingest" value="1T"/>1 TB<br/>
         <p>
 
         <li>Which is the most widely adopted vCenter Server extension for vCenter 5.5 and newer?</li>
-        <input type="radio" name="q8" value="update manager"/>VMware vSphere Update Manager<br/>
-        <input type="radio" name="q8" value="nsx"/>NSX<br/>
-        <input type="radio" name="q8" value="emc backup"/>EMC VMware Backup<br/>
-        <input type="radio" name="q8" value="vrops"/>vRealize Operations Manager<br/>
+        <input type="radio" name="extension" value="update manager"/>VMware vSphere Update Manager<br/>
+        <input type="radio" name="extension" value="nsx"/>NSX<br/>
+        <input type="radio" name="extension" value="emc backup"/>EMC VMware Backup<br/>
+        <input type="radio" name="extension" value="vrops"/>vRealize Operations Manager<br/>
         <p>
 
         <li>Who is the leading vendor of ESXi Server hardware?</li>
-        <input type="radio" name="q9" value="dell"/>Dell Inc.<br/>
-        <input type="radio" name="q9" value="hp"/>HP<br/>
-        <input type="radio" name="q9" value="ibm"/>IBM<br/>
-        <input type="radio" name="q9" value="supermicro"/>Supermicro<br/>
+        <input type="radio" name="vendor" value="dell"/>Dell Inc.<br/>
+        <input type="radio" name="vendor" value="hp"/>HP<br/>
+        <input type="radio" name="vendor" value="ibm"/>IBM<br/>
+        <input type="radio" name="vendor" value="supermicro"/>Supermicro<br/>
         <p>
         
         <li>List booths and posters that are leveraging PhoneHome and telemetry on RADIO 2016 (provide numbers only, e.g. if  Expo Booth #1, and posters #1, #7, and #25 are PhoneHome-related then provide  <code>1, 1, 7, 25</code>)</li>
-        <textarea name="q10" rows="1" style="width:100%"></textarea><br/>
+        <textarea name="booths" rows="1" style="width:100%"></textarea><br/>
         <p>
 
+    </ol>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<b>Section 3: Visionary Questions</b> - let us know how data can help you, VMware, and VMware customers
+</td>
+</tr>
+
+
+<tr>
+<td>
+    <ol>
+        
+        <li>What value did PhoneHome bring to you?</li>
+        <textarea name="user-value" rows="7" style="width:100%"></textarea><br/>
+        <p>
+
+        <li>How can PhoneHome help you and your product?</li>
+        <textarea name="user-help" rows="7" style="width:100%"></textarea><br/>
+        <p>
+        
+        <li>What are the questions which you need to be answered?</li>
+        <textarea name="user-questions" rows="7" style="width:100%"></textarea><br/>
+        <p>
+        
+        <li>How could data be used to deliver new or improve existing features of your product or service?</li>
+        <textarea name="user-future" rows="7" style="width:100%"></textarea><br/>
+        <p>
+    </ol>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<b>Congratulations!</b>
+</td>
+</tr>
+
+
+<tr>
+<td>
+
         <li>Have you used PhoneHome & Product Analytics before?</li>
-        <input type="radio" name="q11" value="yes"/>Yes<br/>
-        <input type="radio" name="q11" value="no"/>No<br/>
+        <input type="radio" name="user-used" value="yes"/>Yes<br/>
+        <input type="radio" name="user-used" value="no"/>No<br/>
         <p>
 
         <li>How have you used PhoneHome & Product Analytics?</li>
@@ -141,55 +187,10 @@
         <input type="checkbox" name="q12_6_other"/>Other <input type="text" name="q12_other_text" /><br/>
         <p>
 
-    </ol>
-</td>
-</tr>
-
-
-<tr>
-<td>
-<b>Chapter 3: Visionary questions</b> - let us know how data can help you, VMware, and VMware customers
-</td>
-</tr>
-
-
-<tr>
-<td>
-    <ol>
-        
-        <li>What value did PhoneHome bring to you?</li>
-        <textarea name="q14" rows="7" style="width:100%"></textarea><br/>
-        <p>
-
-        <li>How can PhoneHome help you and your product?</li>
-        <textarea name="q15" rows="7" style="width:100%"></textarea><br/>
-        <p>
-        
-        <li>What are the questions which you need to be answered?</li>
-        <textarea name="q16" rows="7" style="width:100%"></textarea><br/>
-        <p>
-        
-        <li>How could data be used to deliver new or improve existing features of your product or service?</li>
-        <textarea name="q17" rows="7" style="width:100%"></textarea><br/>
-        <p>
-    </ol>
-</td>
-</tr>
-
-
-<tr>
-<td>
-<b>Chapter 5: The end</b>
-</td>
-</tr>
-
-
-<tr>
-<td>
         &nbsp;&nbsp;&nbsp;
         Did you learn something interesting from this survey?<br>
-        &nbsp;&nbsp;&nbsp;<input type="radio" name="q18" value="yes"/>Yes<br/>
-        &nbsp;&nbsp;&nbsp;<input type="radio" name="q18" value="no"/>No<br/>
+        &nbsp;&nbsp;&nbsp;<input type="radio" name="user-learned" value="yes"/>Yes<br/>
+        &nbsp;&nbsp;&nbsp;<input type="radio" name="user-learned" value="no"/>No<br/>
         <p>
 </td>
 </tr>
