@@ -1,4 +1,3 @@
-
 .semiTransparentImageBackground {
   position: relative;
   z-index: 5;
@@ -55,6 +54,7 @@
 
 
 
+/*
 .zebra td, .zebra th {
     padding: 10px;
     border-bottom: 1px solid #f2f2f2;    
@@ -124,4 +124,5 @@
     -webkit-border-radius: 0 0 6px 6px
     border-radius: 0 0 6px 6px
 }
+*/
   
