@@ -11,7 +11,8 @@
     }
     function onSubmit() {
         var vmwUser = document.getElementById("vmware_id").value;
-        window.open("thanks.html?user="+vmwUser)
+        //window.open("thanks.html?user="+vmwUser)
+        document.getElementById("success").style.visibility = "visible"
         //alert("Click OK to submit your results!\nThank you for participating!\n An email with survey results will be sent to " + vmwUser + "@vmware.com on May 13-th 2016\n If this was interesting to you come and visit Expo Booth XXXX.");
     }
 </script>    
@@ -20,7 +21,7 @@
 <!--button type="button" onclick="onSubmit()">Click Me!</button-->
 
 
-<form id="radio" action="https://vcsa.vmware.com/ph-stg/api/hyper/send" method="get" style="font-family:sans-serif;background-color:#FFFFFF" class="semiTransparentImageBackground">
+<form id="radio" action="https://vcsa.vmware.com/ph-stg/api/hyper/send" method="get" style="font-family:sans-serif;background-color:#FFFFFF" class="semiTransparentImageBackground" target="hiddenSubmit">
             <a href="https://wiki.eng.vmware.com/PhoneHome"><img src="product-analytics-logo.gif" width="25%" align="right"></a>
         &nbsp;<p>
         <input type="hidden" name="_c" value="radio-survey"/>
@@ -197,8 +198,18 @@
 </table>
 
         <input type="submit" value = "Submit" onclick="onSubmit()"/>
-        &nbsp;<p>
-        &nbsp;<p>
-    </form>
+        <div id="success" style="visibility:hidden" class="alert-box success" width="80%">
+           <table border="0" width ="100%">
+              <tr>
+                 <td align="left" width="5%"><img src="success.png" width="80%"/></td>
+                 <td><span>success: </span></td>
+                 <td align="left">An email with contest results will be sent to the winners on May 13th 2016. Check the <a href='https://reports.eng.vmware.com/#/views/RADIOContest/LiveDashboard'>live dashboard</a> for latest results.<br/>
+                 If this contest was interesting to you come and visit RADIO Expo Booth 'Product Analytics'.
+                 </td>
+              </tr>
+           </table>
+        </div>
+ </form>
+ <iframe height="1px" width="1px" name="hiddenSubmit" src=""/>
 </body>
 </html>
