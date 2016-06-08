@@ -43,7 +43,6 @@
 <td>
         &nbsp;&nbsp;&nbsp;
         What is your VMware email address: 
-        <t>What is your VMware email address: 
         <input  type="text" 
                 name="user" 
                 id="vmware_id" 
@@ -63,6 +62,7 @@
         &nbsp;&nbsp;&nbsp;
         What is your role? <input type="text" name="role" />
         <p>
+        <br/>
 
 </td>
 </tr>
@@ -77,10 +77,11 @@
 <tr>
 <td>
     <ol>
-        <li>Is VI Client (the C#-based UI) used by customers more often than the vSphere Web Client (the Adobe Flex-based UI)?</li>
+        <li>Is VI Client (the C#-based UI) used by customers more often than the vSphere Web Client (the Adobe Flex-based UI)?<br>
         <input type="radio" name="vclient" value="yes"/>Yes<br/>
         <input type="radio" name="vclient" value="no"/>No<br/>
         <input type="radio" name="vclient" value="both"/>Both are used about the same<br/>
+        </li>
         <p>
        
         
@@ -100,12 +101,13 @@
         <p>
         -->
         
-        <li>For deployed ESXi hosts, what is the largest memory size? <a href="http://url.vmware.com/thcc">Hint: Query the ESX table</a></li>
+        <li>For deployed ESXi hosts, what is the largest memory size? <a href="http://url.vmware.com/thcc">Hint: Query the ESX table</a><br>
         <input type="radio" name="maxmem" value="128G"/>128 GB<br/>
         <input type="radio" name="maxmem" value="256G"/>256 GB<br/>
         <input type="radio" name="maxmem" value="1T"/>1 TB<br/>
         <input type="radio" name="maxmem" value="4T"/>4 TB<br/>
         <input type="radio" name="maxmem" value="more"/>more than 4 TB<br/>
+        </li>
         <p>
         
         <!--
@@ -117,18 +119,20 @@
         <p>
         -->
 
-        <li>Which is the most widely adopted vCenter Server extension for vCenter 5.5 and newer?</li>
+        <li>Which is the most widely adopted vCenter Server extension for vCenter 5.5 and newer?<br/>
         <input type="radio" name="extension" value="update manager"/>VMware vSphere Update Manager<br/>
         <input type="radio" name="extension" value="nsx"/>NSX<br/>
         <input type="radio" name="extension" value="emc backup"/>EMC VMware Backup<br/>
         <input type="radio" name="extension" value="vrops"/>vRealize Operations Manager<br/>
+        </li>
         <p>
 
-        <li>Who is the leading vendor of ESXi Server hardware?</li>
+        <li>Who is the leading vendor of ESXi Server hardware?<br>
         <input type="radio" name="vendor" value="dell"/>Dell Inc.<br/>
         <input type="radio" name="vendor" value="hp"/>HP<br/>
         <input type="radio" name="vendor" value="ibm"/>IBM<br/>
         <input type="radio" name="vendor" value="supermicro"/>Supermicro<br/>
+        </li>
         <p>
         
         <!--
@@ -152,11 +156,7 @@
 <tr>
 <td>
     <ol>
-        <li>What value did PhoneHome bring to you?</li>
-        <textarea name="user-value" rows="7" style="width:100%"></textarea><br/>
-        <p>
-
-        <li>How can PhoneHome help you and your product?</li>
+        <li>How can Product Analytics help you and your product?</li>
         <textarea name="user-help" rows="7" style="width:100%"></textarea><br/>
         <p>
         
@@ -166,6 +166,10 @@
         
         <li>How could data be used to deliver new or improve existing features of your product or service?</li>
         <textarea name="user-future" rows="7" style="width:100%"></textarea><br/>
+        <p>
+
+        <li>If you have used it in the past, what value has Product Analytics bring to you?</li>
+        <textarea name="user-value" rows="7" style="width:100%"></textarea><br/>
         <p>
     </ol>
 </td>
@@ -181,17 +185,17 @@
 
 <tr>
 <td>
-        Had you used PhoneHome & Product Analytics before?</br/>
+        Had you used PhoneHome & Product Analytics before?<br/>
         &nbsp;&nbsp;&nbsp;<input type="radio" name="user-used" value="yes"/>Yes<br/>
         &nbsp;&nbsp;&nbsp;<input type="radio" name="user-used" value="no"/>No<br/>
         <br/>
 
-        If so, how had you used PhoneHome & Product Analytics?</br>
-        &nbsp;&nbsp;&nbsp;<input type="checkbox" name="q12_1_sent"/>I've sent data using a PhoneHome API<br/>
-        &nbsp;&nbsp;&nbsp;<input type="checkbox" name="q12_2_sql"/>I've written SQL queries against existing PhoneHome data<br/>
-        &nbsp;&nbsp;&nbsp;<input type="checkbox" name="q12_3_tableau"/>I've created Tableau reports with existing PhoneHome data<br/>
-        &nbsp;&nbsp;&nbsp;<input type="checkbox" name="q12_4_read_reports"/>I've used existing reports based on PhoneHome data<br/>
-        &nbsp;&nbsp;&nbsp;<input type="checkbox" name="q12_5_advanced_analytics"/>I've used the Advanced Analytics platform provided by PhoneHome team<br/>
+        If so, how had you used PhoneHome & Product Analytics?<br>
+        &nbsp;&nbsp;&nbsp;<input type="checkbox" name="q12_1_sent"/>I've sent data using a Product Analytics API<br/>
+        &nbsp;&nbsp;&nbsp;<input type="checkbox" name="q12_2_sql"/>I've written SQL queries against existing Product Analytics data<br/>
+        &nbsp;&nbsp;&nbsp;<input type="checkbox" name="q12_3_tableau"/>I've created Tableau reports with existing Product Analytics data<br/>
+        &nbsp;&nbsp;&nbsp;<input type="checkbox" name="q12_4_read_reports"/>I've used existing reports based on Product Analytics data<br/>
+        &nbsp;&nbsp;&nbsp;<input type="checkbox" name="q12_5_advanced_analytics"/>I've used the Advanced Analytics platform provided by Product Analytics team<br/>
         &nbsp;&nbsp;&nbsp;<input type="checkbox" name="q12_6_other"/>Other <input type="text" name="q12_other_text" /><br/>
         <br/>
 
