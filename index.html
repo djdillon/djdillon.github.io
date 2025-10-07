@@ -1,47 +1,190 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Product Analytics - RADIO 2016 Day 4 contest</title>
-    <style>
-      body {
-         font-family: sans-serif
-      }
-      .button {
-         /*font: bold 11px Arial;*/
-         text-decoration: none;
-         background-color: #EEEEEE;
-         color: #333333;
-         padding: 2px 6px 2px 6px;
-         border-top: 1px solid #CCCCCC;
-         border-right: 1px solid #333333;
-         border-bottom: 1px solid #333333;
-         border-left: 1px solid #CCCCCC;
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma & Dave's Wedding</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
-<a href="https://wiki.eng.vmware.com/PhoneHome"><img src="product-analytics-logo.png" width="25%" align="right"></a>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Emma & Dave</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#wedding" class="nav-link">Wedding</a>
+                <a href="#location" class="nav-link">Location</a>
+                <a href="#schedule" class="nav-link">Schedule</a>
+                <a href="#details" class="nav-link">Details</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-Thank you for participating in the Product Analytics 2016 RADIO contest!
-<br/><br/>
+    <!-- Hero Section -->
+    <section id="wedding" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Emma & Dave</h1>
+            <p class="hero-subtitle">Together with their families</p>
+            <p class="hero-date">October 24-26, 2024</p>
+            <div class="hero-divider"></div>
+        </div>
+    </section>
 
-Product Analytics team will determine a winner based on two categories:
-<ul>
-   <li>Customer Champion: For the person who knows best our customers and products.</li>
-   <li>Visionary: For the most valuable and specific idea for utilizing Product Analytics data.</li>
-</ul>
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="section-content">
+            <h2 class="section-title">Location</h2>
+            <div class="location-info">
+                <h3>Reading Farms Estate</h3>
+                <p class="address">188 Reading Farms Rd<br>Reading, VT 05062</p>
+                <p class="location-description">
+                    Set in the beautiful Vermont countryside, Reading Farms Estate offers a picturesque setting for our autumn celebration. The historic farm features rolling hills, rustic barns, and stunning mountain views.
+                </p>
+                <div class="location-actions">
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-primary">Get Directions</a>
+                    <a href="tel:+1234567890" class="btn btn-secondary">Call Venue</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-Contest is open during the RADIO Day 4 @Cambridge on June 9th.
-Winners will be announced and prizes will be given away on June 10th.
-All participants will be notified with contest results over email (provided as an answer to question #1).
-<br/><br/>
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+        <div class="section-content">
+            <h2 class="section-title">Wedding Weekend Schedule</h2>
+            <div class="schedule-container">
+                <div class="schedule-day">
+                    <h3 class="day-title">Friday, October 24th</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-time">6:00 PM</div>
+                            <div class="timeline-content">
+                                <h4>Welcome Reception</h4>
+                                <p>Join us for drinks and light appetizers at the main barn</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">8:00 PM</div>
+                            <div class="timeline-content">
+                                <h4>Casual Dinner</h4>
+                                <p>Family-style dinner and mingling</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="schedule-day">
+                    <h3 class="day-title">Saturday, October 25th</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-time">10:00 AM</div>
+                            <div class="timeline-content">
+                                <h4>Hiking & Activities</h4>
+                                <p>Explore the estate grounds and nearby trails</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">2:00 PM</div>
+                            <div class="timeline-content">
+                                <h4>Rehearsal</h4>
+                                <p>Wedding party rehearsal at the ceremony site</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">6:00 PM</div>
+                            <div class="timeline-content">
+                                <h4>Rehearsal Dinner</h4>
+                                <p>Formal dinner for wedding party and immediate family</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="schedule-day">
+                    <h3 class="day-title">Sunday, October 26th</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-time">11:30 AM</div>
+                            <div class="timeline-content">
+                                <h4>Ceremony</h4>
+                                <p>Join us as we say "I do" in the garden overlooking the mountains</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">12:30 PM</div>
+                            <div class="timeline-content">
+                                <h4>Cocktail Hour</h4>
+                                <p>Enjoy drinks and appetizers in the courtyard</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">2:00 PM</div>
+                            <div class="timeline-content">
+                                <h4>Reception</h4>
+                                <p>Lunch, dancing, and celebration in the main barn</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-time">6:00 PM</div>
+                            <div class="timeline-content">
+                                <h4>Send-off</h4>
+                                <p>Sparkler send-off in the garden</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-Here are a few hints to help you answer questions on the next page:
-<ul >
-   <li><a href="https://wiki.eng.vmware.com/PhoneHome">Product Analytics main wiki</a></li>
-   <li><a href="https://sql.phonehome.vmware.com">SQL access to PhoneHome data</a></li>
-   <li><a href="https://reports.eng.vmware.com">Tableau reports</a></li>
-   <li><a href="https://wiki.eng.vmware.com/PhoneHome/Tableau/Template/Help#Request_access_to_a_Tableau_Server">Request access to Tableau</a></li>
-</ul>
-The following questions and answers are based on the data we have collected from participating customer sites.  
-<br/><br/>
+    <!-- Details Section -->
+    <section id="details" class="details">
+        <div class="section-content">
+            <h2 class="section-title">Wedding Details</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3>Dress Code</h3>
+                    <p>Cocktail attire. Please avoid white, cream, or ivory colors.</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Gifts</h3>
+                    <p>Your presence is the greatest gift. If you wish to give, we have a registry at Macy's and Target.</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Accommodations</h3>
+                    <p>Room blocks available at Riverside Inn (2 miles from venue). Mention "Smith Wedding" for group rate.</p>
+                </div>
+                <div class="detail-card">
+                    <h3>RSVP</h3>
+                    <p>Please RSVP by September 1st, 2024. Contact Emma at (555) 123-4567 or Dave at (555) 987-6543.</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Parking</h3>
+                    <p>Complimentary valet parking available. Street parking also permitted in designated areas.</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Weather</h3>
+                    <p>Ceremony will be outdoors weather permitting. Indoor backup location available if needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<a class="button" href="survey.html"> I'm ready for the survey!</>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Emma & Dave's Wedding. Made with love.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
