@@ -118,7 +118,7 @@ h3 {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-                url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+                url('reading-farms.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -318,7 +318,7 @@ section {
 /* Details Section */
 .details {
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-                url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+                url('reading-farms-night.jpg') center/cover no-repeat;
     background-attachment: fixed;
 }
 
